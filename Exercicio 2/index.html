@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercicio 2</title>
+</head>
+
+<body class="text-center">
+
+    <h1 class="mt-5">Troque as cores!</h1>
+
+    <h2>Alterar a cor do fundo:</h2>
+    <div class="btn-group mb-3" role="group">
+        <button class="btn btn-danger" onclick="changeBackgroundColor('red')">Vermelho</button>
+        <button class="btn btn-primary" onclick="changeBackgroundColor('blue')">Azul</button>
+        <button class="btn btn-success" onclick="changeBackgroundColor('green')">Verde</button>
+        <button class="btn btn-warning" onclick="changeBackgroundColor('yellow')">Amarelo</button>
+        <button class="btn btn-purple" onclick="changeBackgroundColor('purple')">Roxo</button>
+    </div>
+
+    <h2>Alterar a cor do texto:</h2>
+    <div class="btn-group mb-3" role="group">
+        <button class="btn btn-dark" onclick="changeTextColor('black')">Preto</button>
+        <button class="btn btn-light" onclick="changeTextColor('white')">Branco</button>
+        <button class="btn btn-warning" onclick="changeTextColor('orange')">Laranja</button>
+        <button class="btn btn-pink" onclick="changeTextColor('pink')">Rosa</button>
+        <button class="btn btn-secondary" onclick="changeTextColor('gray')">Cinza</button>
+    </div>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function changeTextColor(color) {
+            document.body.style.color = color;
+        }
+    </script>
+
+</body>
+
+</html>

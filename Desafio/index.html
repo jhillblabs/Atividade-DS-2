@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Calculadora de Fatorial</h1>
+    <button onclick="calcularFatorial(2)">02</button>
+    <button onclick="calcularFatorial(6)">06</button>
+    <button onclick="calcularFatorial(8)">08</button>
+    <button onclick="calcularFatorial(10)">10</button>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+        function calcularFatorial(n) {
+            const fatorial = (num) => (num <= 1 ? 1 : num * fatorial(num - 1));
+            const passos = [];
+            for (let i = n; i > 0; i--) {
+                passos.push(i);
+            }
+            const resultado = fatorial(n);
+            document.getElementById('resultado').innerText = 
+                `${n}! = ${passos.join(' x ')} = ${resultado}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercicio 3</title>
+</head>
+
+<body class="text-center">
+
+    <h1 class="mt-5">Trocador de Fonte</h1>
+    <p id="fonte" class="mt-3">Faça elevar, o cosmo no seu coração<br>
+                  Todo mal combater, despertar o poder<br>
+                  Sua constelação, sempre irá te proteger<br>
+                  Supera a dor e dá forças pra lutar</p>
+
+    <div class="btn-group mt-3" role="group">
+        <input type="button" class="btn btn-primary" value="Arial" onclick="document.getElementById('fonte').style.fontFamily='Arial';">
+        <input type="button" class="btn btn-secondary" value="Verdana" onclick="document.getElementById('fonte').style.fontFamily='Verdana';">
+        <input type="button" class="btn btn-success" value="Times New Roman" onclick="document.getElementById('fonte').style.fontFamily='Times New Roman';">
+        <input type="button" class="btn btn-warning" value="Courier New" onclick="document.getElementById('fonte').style.fontFamily='Courier New';">
+        <input type="button" class="btn btn-info" value="Tahoma" onclick="document.getElementById('fonte').style.fontFamily='Tahoma';">
+    </div>
+
+</body>
+
+</html>

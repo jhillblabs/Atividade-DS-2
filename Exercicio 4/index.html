@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercicio 4</title>
+</head>
+<body class="text-center">
+
+    <h1 class="mt-5">Calculadora de Tabuada</h1>
+    <input id="numberInput" class="form-control mt-3" placeholder="Digite um número" min="0">
+    <input type="button" class="btn btn-primary mt-3" value="Calcular Tabuada" onclick="calculateTabuada()">
+
+    <div id="result" class="mt-4"></div>
+
+    <script>
+        function calculateTabuada() {
+            const number = document.getElementById('numberInput').value;
+            const resultDiv = document.getElementById('result');
+
+            // Limpa o resultado anterior
+            resultDiv.innerHTML = '';
+
+            // Verifica se o número é válido
+            if (number === '') {
+                resultDiv.innerHTML = 'Por favor, insira um número.';
+                return;
+            }
+
+            // Calcula a tabuada
+            for (let i = 1; i <= 10; i++) {
+                const result = number * i;
+                resultDiv.innerHTML += `${number} x ${i} = ${result}<br>`;
+            }
+        }
+    </script>
+
+</body>
+</html>
